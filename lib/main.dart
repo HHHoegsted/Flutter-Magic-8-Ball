@@ -3,13 +3,15 @@ import 'dart:math';
 
 void main() => runApp(
       MaterialApp(
-        home: Scaffold(
-          backgroundColor: const Color(0xFF718792),
-          appBar: AppBar(
-            backgroundColor: const Color(0xFF455A64),
-            title: Text('Magic 8-Ball'),
+        home: SafeArea(
+          child: Scaffold(
+            backgroundColor: const Color(0xFF718792),
+            appBar: AppBar(
+              backgroundColor: const Color(0xFF455A64),
+              title: Text('Magic 8-Ball'),
+            ),
+            body: EightBall(),
           ),
-          body: EightBall(),
         ),
       ),
     );
